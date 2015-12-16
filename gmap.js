@@ -6,7 +6,7 @@ var map;
 function initMap() {
   map = new google.maps.Map(document.getElementById('map'), {
     center: {lat: 37.09024, lng: -95.712891},
-    zoom: 4,
+    zoom: 3,
     scrollwheel: false
   });
 
@@ -22,7 +22,7 @@ function initMap() {
 	// Initailize map again
 	map = new google.maps.Map(document.getElementById('map'), {
     center: {lat: 37.09024, lng: -95.712891},
-    zoom: 4,
+    zoom: 3,
     scrollwheel: false
   });
 	// set the lat/long for each point

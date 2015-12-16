@@ -1,21 +1,38 @@
+
 body {
-	background-color: #333;
 	margin: 0;
+	padding: 0;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+#container {
+	width: 75%;
+	height: 100vh;
+	background-color: #333;
+	margin: 0 auto;
+	padding: 0;
+	border-left: 3px solid #53b6d0;
+	border-right: 3px solid #53b6d0;
+}
+
+h1 {
+	width: 300px;
+	text-align: center;
+	padding-top: 10px;
+	margin: 0 auto 30px auto;
+	color: #53b6d0;
 }
 
 #map {
-	width: 580px;
-	height: 300px;
-	display: inline-block;
-	float: right;
+	width: 70%;
+	height: 325px;
+	margin: 0 auto 3% auto;
 }
 
 #form-container {
-	width: 600px;
-	margin-left: 30px;
+	width: 65%;
+	margin: 0 auto;
 	padding: 10px;
-	float: left;
-	display: inline-block;
 	background-color: #333;
 	color: #53b6d0;
 	border: 1px inset #53b6d0;
@@ -23,12 +40,19 @@ body {
 
 #start {
 	float: left;
-	/*display: inline-block;*/
-	/*padding-bottom: 1em;*/
 }
 
 #end {
 	float: right;
-	/*display: inline-block;*/
-	/*padding-bottom: 1em;*/
+}
+
+#nautm {
+	text-align: right;
+}
+
+@media all and (max-width: 400px) {
+  	#airport1,
+  	#airport2 {
+  		width: 150px;
+  	}
 }

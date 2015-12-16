@@ -3,9 +3,10 @@
 	<head>
 		<title>Airports</title>
 		<meta charset="utf-8">
-		<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href='https://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 		<script type="text/javascript" src="aiport.js"></script>
@@ -25,7 +26,8 @@
 					<input type="hidden" name="lat2" id="airport2-lat" size="25">
 					<input type="hidden" name="lon2" id="airport2-lon" size="25">
 					<input type="submit" name="calculate" value="Calculate!">
-					<p>Miles </p><input type="text" name="nm" size="30"></p>
+					<input type="button" onClick="history.go(0)" value="Clear Form">
+					<p><input type="text" name="nm" size="30" id="nautm">Nautical Miles</p>
 				</form>
 			</div>
 		</div>

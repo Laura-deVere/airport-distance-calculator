@@ -1,6 +1,6 @@
 $(function() { 
     $("#airport1").autocomplete({ 
-        source: Airport , minLength: 0, delay: 0, 
+        source: Airport , minLength: 3, delay: 0, 
         focus: function( event, ui ) {
             $( "#airport1" ).val( ui.item.value );
             return false;
@@ -13,7 +13,7 @@ $(function() {
         }
     }); 
     $("#airport2").autocomplete({
-        source: Airport, minLength: 0, delay: 0,
+        source: Airport, minLength: 3, delay: 0,
         focus: function( event, ui ) {
             $('#airport2').val( ui.item.value );
             return false;
@@ -22,6 +22,7 @@ $(function() {
             $( "#airport2" ).val( ui.item.value );
             $( "#airport2-lat" ).val( ui.item.latitude );
             $( "#airport2-lon" ).val( ui.item.longitude );
+            return false;
         }
     });
 });
