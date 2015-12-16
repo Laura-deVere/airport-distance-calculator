@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Airports</title>
+		<meta charset="utf-8">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="aiport.js"></script>
+		<script type="text/javascript" src="main.js"></script>
+	</head>
+	<body>
+		<h1>Calculate distance</h1>
+		<form id="searchform" onsubmit="distance(this);return false;">
+    	<p>Airport 1 <input id="airport1" size="60"></p>
+    	<p>Airport 2 <input id="airport2" size="60"></p>
+			<p>Lat 1 <input type="text" name="lat1" id="airport1-lat" size="60"></p>
+			<p>Long 1 <input type="text" name="lon1" id="airport1-lon" size="60"></p>
+			<p>Lat 2 <input type="text" name="lat2" id="airport2-lat" size="60"></p>
+			<p>Long 2 <input type="text" name="lon2" id="airport2-lon" size="60"></p>
+			<input type="submit" name="calculate" value="Calculate!">
+			<p>Miles </p><input type="text" name="mi" size="30"></p>
+		</form>
+	</body>
+</html>
